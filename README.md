@@ -2,9 +2,11 @@
 
 [![Build Status](https://travis-ci.org/SunGard-Labs/sg-protractor-tools.svg)](https://travis-ci.org/SunGard-Labs/sg-protractor-tools)
 
-Version: 1.0.4
+Note: SunGard has now merged with Fidelity Information Services, LLC (FIS)
 
-This library provides a reusable and generic set of helper functions for the Protractor test framework, which SunGard is using for testing its HTML5-based user interfaces. It includes functions that simplify things like browser resizing, scrolling and memory usage tracking as part of a test suite. The project bundles an example application that showcases the functionality.
+Version: 1.0.5-SNAPSHOT
+
+This library provides a reusable and generic set of helper functions for the Protractor test framework, which FIS is using for testing its HTML5-based user interfaces. It includes functions that simplify things like browser resizing, scrolling and memory usage tracking as part of a test suite. The project bundles an example application that showcases the functionality.
 
 While using [Protractor](https://github.com/angular/protractor) for testing our [Angular](https://angularjs.org/)-based applications, we have found that we can simplify many of the common tasks done as part of part of our test suite. The Protractor API is fairly low-level in some cases, and we have seen that we can cut down the amount of code for some common tasks by externalizing functionality into a reusable library.
 
@@ -26,7 +28,7 @@ Take a look at the [memory.md](docs/memory.md) file to see the API for running a
 it('should increase the memory consumption', function () {
     var iterations = 250;
 
-    sgpt.memory.runTestFunction(this, iterations, function () {
+    fispt.memory.runTestFunction(this, iterations, function () {
         // This test function will be called 250 times, and the memory is measured after each iteration.
 
         // Your test code goes here.
@@ -60,16 +62,16 @@ This will include the library in your project's `package.json` file as a _develo
 To use the library in your code, use the following code to import it:
 
 ```
-var sgpt = require('sg-protractor-tools');
+var fispt = require('sg-protractor-tools');
 ```
 
-This will expose the libraries main object as `sgpt` in your code. You can use the library's functions by referencing the `sgpt` object, e.g. for scrolling:
+This will expose the libraries main object as `fispt` in your code. You can use the library's functions by referencing the `fispt` object, e.g. for scrolling:
 
 ```
-sgpt.scroll.scrollTo(...);
+fispt.scroll.scrollTo(...);
 ```
 
-The library's functions are split up by their domain, e.g. all functions relating to resizing windows are grouped under the `sgpt.resize` object. Take a look at the [docs](docs) folder for more information.
+The library's functions are split up by their domain, e.g. all functions relating to resizing windows are grouped under the `fispt.resize` object. Take a look at the [docs](docs) folder for more information.
 
 ## Examples
 
@@ -114,4 +116,4 @@ grunt release --releaseVersion 0.2.0 --developVersion 0.3.0-SNAPSHOT
 
 ## License
 
-Copyright © SunGard 2015. Licensed under the MIT license.
+Copyright © FIS 2015. Licensed under the MIT license.

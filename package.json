@@ -1,6 +1,6 @@
 {
   "name": "sg-protractor-tools",
-  "version": "1.0.4",
+  "version": "1.0.5-SNAPSHOT",
   "description": "Library of reusable helper functions for testing HTML5 applications with Protractor",
   "main": "index.js",
   "directories": {
@@ -34,14 +34,6 @@
       "email": "antony.davis@sungard.com"
     },
     {
-      "name": "Carl Woermann",
-      "email": "carl.woermann@sungard.com"
-    },
-    {
-      "name": "Dewald Jacobs",
-      "email": "dewald.jacobs@sungard.com"
-    },
-    {
       "name": "Faan Walters",
       "email": "faan.walters@sungard.com"
     },
@@ -56,6 +48,10 @@
     {
       "name": "Sebastian Fuss",
       "email": "sebastian.fuss@sungard.com"
+    },
+    {
+       "name": "Jo du Plessis",
+       "email": "jo.duplessis@sungard.com"
     }
   ],
   "license": "MIT",
