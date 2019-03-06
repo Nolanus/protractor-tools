@@ -20,8 +20,18 @@ describe('Resizing demo App', () => {
     resizeUtil.setViewportSize(640, 400);
     page.wait();
     resizeUtil.getWindowSize().then((windowSize: ISize) => {
-      expect(windowSize.height).toBeGreaterThan(400);
-      expect(windowSize.width).toBeGreaterThanOrEqual(640);
+      resizeUtil.getChromeSize().then(chromeSize => {
+          const isHeadless = chromeSize.height === 0 || chromeSize.width === 0;
+
+          if (isHeadless) {
+            expect(windowSize.height).toBeGreaterThanOrEqual(400);
+            expect(windowSize.width).toBeGreaterThanOrEqual(640);
+          } else {
+            expect(windowSize.height).toBeGreaterThan(400);
+            expect(windowSize.width).toBeGreaterThan(640);
+          }
+        }
+      );
     });
   });
 

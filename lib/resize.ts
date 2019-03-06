@@ -39,11 +39,8 @@ export class ResizeUtil extends BaseUtil {
   public setViewportSize(width: number, height: number): promise.Promise<void> {
     const d = promise.defer<void>();
 
-    promise.fullyResolved([this.getWindowSize(), this.getViewportSize()]).then(([windowSize, viewportSize]: ISize[]) => {
-      // Calculate the difference between viewport and window height/width
-      let deltaHeight = windowSize.height - viewportSize.height;
-      let deltaWidth = windowSize.width - viewportSize.width;
-      this.setWindowSize(width + deltaWidth, height + deltaHeight).then(() => d.fulfill(), (err) => d.reject(err));
+    this.getChromeSize().then((delta) => {
+      this.setWindowSize(width + delta.width, height + delta.height).then(() => d.fulfill(), (err) => d.reject(err));
     });
 
     return d.promise;
@@ -62,4 +59,24 @@ export class ResizeUtil extends BaseUtil {
 
     return <promise.Promise<ISize>>this.browser.driver.executeScript(viewportSizesJs);
   }
+
+  /**
+   * Return the vertical and horizontal space occupied by the browser chrome (user interface overhead that surrounds web page content)
+   *
+   * Note 1: This method is used when trying to set the viewport to a certain size by manipulating the browser window size
+   * Note 2: A headless browser usually returns a width and/or height of 0 for this
+   *
+   * @returns {promise.Promise<ISize>}
+   */
+  public getChromeSize(): promise.Promise<ISize> {
+    const d = promise.defer<ISize>();
+
+    promise.fullyResolved([this.getWindowSize(), this.getViewportSize()]).then(([windowSize, viewportSize]: ISize[]) => {
+      // Calculate the difference between viewport and window height/width
+      d.fulfill({height: windowSize.height - viewportSize.height, width: windowSize.width - viewportSize.width});
+    });
+
+    return d.promise;
+  }
+
 }
