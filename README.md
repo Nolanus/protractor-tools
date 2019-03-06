@@ -3,7 +3,8 @@
 > A typescript rewrite of [sg-protractor-tools](https://github.com/SunGard-Labs/sg-protractor-tools) utility library
 
 [![Build Status](https://travis-ci.org/Nolanus/protractor-tools.svg?branch=master)](https://travis-ci.org/Nolanus/protractor-tools)
-[![Dependencies Status](https://david-dm.org/Nolanus/protractor-tools.svg?path=projects/ngx-page-scroll)](https://david-dm.org/Nolanus/protractor-tools?path=projects/ngx-page-scroll)
+[![dependencies Status](https://david-dm.org/Nolanus/protractor-tools/status.svg)](https://david-dm.org/Nolanus/protractor-tools)
+[![devDependencies Status](https://david-dm.org/Nolanus/protractor-tools/dev-status.svg)](https://david-dm.org/Nolanus/protractor-tools?type=dev)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Nolanus/protractor-tools.svg)](https://greenkeeper.io/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3b6bcf4d59a84933b03a91561729d609)](https://www.codacy.com/app/sebastian-fuss/protractor-tools?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nolanus/protractor-tools&amp;utm_campaign=Badge_Grade)
