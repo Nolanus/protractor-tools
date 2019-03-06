@@ -1,5 +1,12 @@
-# protractor-tools
+# protractor-tools [![npm version](https://img.shields.io/npm/v/protractor-tools.svg?style=flat)](https://www.npmjs.com/package/protractor-tools) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+
 > A typescript rewrite of [sg-protractor-tools](https://github.com/SunGard-Labs/sg-protractor-tools) utility library
+
+[![Build Status](https://travis-ci.org/Nolanus/protractor-tools.svg?branch=master)](https://travis-ci.org/Nolanus/protractor-tools)
+[![Dependencies Status](https://david-dm.org/Nolanus/protractor-tools.svg?path=projects/ngx-page-scroll)](https://david-dm.org/Nolanus/protractor-tools?path=projects/ngx-page-scroll)
+[![Greenkeeper badge](https://badges.greenkeeper.io/Nolanus/protractor-tools.svg)](https://greenkeeper.io/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3b6bcf4d59a84933b03a91561729d609)](https://www.codacy.com/app/sebastian-fuss/protractor-tools?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nolanus/protractor-tools&amp;utm_campaign=Badge_Grade)
 
 This library provides a reusable and generic set of helper functions for the Protractor test framework. It includes functions that simplify things like browser resizing, scrolling and memory usage tracking as part of a test suite. The project bundles an example application that showcases the functionality.
 
