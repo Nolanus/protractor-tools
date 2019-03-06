@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "declaration": true,
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "listFiles": false,
+    "noLib": false,
+    "outDir": "build",
+    "skipLibCheck": true
+  },
+  "include": [
+    "./index.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}

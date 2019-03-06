@@ -1,77 +1,43 @@
 {
-  "name": "sg-protractor-tools",
-  "version": "1.0.5-SNAPSHOT",
-  "description": "Library of reusable helper functions for testing HTML5 applications with Protractor",
+  "name": "protractor-tools",
+  "version": "1.0.1",
+  "description": "Collection of helper functions for protractor e2e test",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
-    "test": "grunt test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint ./lib/**/*.ts -t verbose --exclude ./lib/**/*.d.ts",
+    "compile": "rimraf ./build && npm run lint && tsc -p tsconfig.json --noUnusedLocals",
+    "release": "npm run compile && cpy README.md package.json ./build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SunGard-Labs/sg-protractor-tools.git"
+    "url": "git+https://github.com/Nolanus/protractor-tools.git"
   },
-  "bugs": {
-    "url": "https://github.com/SunGard-Labs/sg-protractor-tools/issues"
-  },
-  "keywords": [
-    "html5",
-    "angularjs",
-    "memory",
-    "protractor",
-    "test"
-  ],
-  "author": "SunGard",
-  "contributors": [
-    {
-      "name": "Akho Tshweza",
-      "email": "akho.tshweza@sungard.com"
-    },
-    {
-      "name": "Antony Davis",
-      "email": "antony.davis@sungard.com"
-    },
-    {
-      "name": "Faan Walters",
-      "email": "faan.walters@sungard.com"
-    },
-    {
-      "name": "Keir Timm",
-      "email": "keir.timm@sungard.com"
-    },
-    {
-      "name": "Nils Winkler",
-      "email": "nils.winkler@sungard.com"
-    },
-    {
-      "name": "Sebastian Fuss",
-      "email": "sebastian.fuss@sungard.com"
-    },
-    {
-       "name": "Jo du Plessis",
-       "email": "jo.duplessis@sungard.com"
-    }
-  ],
+  "author": "Sebastian Fuss",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nolanus/protractor-tools/issues"
+  },
+  "homepage": "https://github.com/Nolanus/protractor-tools#readme",
+  "peerDependencies": {
+    "protractor": "~5.4.2",
+    "rxjs": "^6.3.3"
+  },
   "devDependencies": {
-    "expect.js": "^0.3.1",
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-mocha-test": "^0.12.0",
-    "grunt-sg-release": "^0.2.2",
-    "jshint-stylish": "^1.0.0",
-    "load-grunt-tasks": "^0.6.0",
-    "mocha": "^1.21.4"
+    "@types/fs-extra": "^5.0.5",
+    "@types/jasmine": "~3.3.9",
+    "@types/request": "^2.48.1",
+    "@types/rx-node": "0.0.5",
+    "@types/selenium-webdriver": "^3.0.15",
+    "cpy-cli": "^2.0.0",
+    "protractor": "~5.4.2",
+    "rimraf": "^2.6.3",
+    "rxjs": "^6.3.3",
+    "tslint": "^5.13.1",
+    "typescript": "^3.3.3333"
   },
   "dependencies": {
-    "cli-color": "^1.0.0",
-    "d3": "^3.5.5",
-    "mkdirp": "^0.5.1",
-    "phantom": "^0.7.2",
-    "phantomjs": "^1.9.16",
-    "requireindex": "^1.1.0",
-    "underscore": "^1.7.0"
+    "fs-extra": "^7.0.1",
+    "quiche": "^0.3.0"
   }
 }
