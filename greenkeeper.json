@@ -1,9 +1,13 @@
 {
   "groups": {
-    "default": {
+    "lib": {
       "packages": [
-        "demo/package.json",
         "package.json"
+      ]
+    },
+    "demo": {
+      "packages": [
+        "demo/package.json"
       ]
     }
   }
