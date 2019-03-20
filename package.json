@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^5.0.5",
-    "@types/jasmine": "~3.3.9",
+    "@types/jasmine": "~3.3.12",
     "@types/request": "^2.48.1",
     "@types/rx-node": "0.0.5",
     "@types/selenium-webdriver": "^3.0.15",
@@ -33,8 +33,8 @@
     "protractor": "~5.4.2",
     "rimraf": "^2.6.3",
     "rxjs": "^6.3.3",
-    "tslint": "^5.13.1",
-    "typescript": "^3.3.3333"
+    "tslint": "~5.14.0",
+    "typescript": "~3.3.4000"
   },
   "dependencies": {
     "fs-extra": "^7.0.1",
