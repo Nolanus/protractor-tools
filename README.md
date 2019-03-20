@@ -30,6 +30,9 @@ Import the required util classes in your `*.e2e-spec.ts` files.
 import { ResizeUtil } from 'protractor-tools';
 
 describe('Resizing demo App', () => {
+
+      const resizeUtil = new ResizeUtil();
+
       it('should resize the browser window a little', () => {
         // ...
         resizeUtil.setWindowSize(1303, 876);
