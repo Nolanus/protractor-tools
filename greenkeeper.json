@@ -1,0 +1,14 @@
+{
+  "groups": {
+    "lib": {
+      "packages": [
+        "package.json"
+      ]
+    },
+    "demo": {
+      "packages": [
+        "demo/package.json"
+      ]
+    }
+  }
+}
