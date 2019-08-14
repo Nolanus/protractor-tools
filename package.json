@@ -31,7 +31,7 @@
     "@types/selenium-webdriver": "^3.0.15",
     "cpy-cli": "^2.0.0",
     "protractor": "~5.4.2",
-    "rimraf": "^2.6.3",
+    "rimraf": "2.6.3",
     "rxjs": "^6.3.3",
     "tslint": "~5.14.0",
     "typescript": "~3.3.4000"
