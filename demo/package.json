@@ -42,7 +42,7 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~5.4.0",
     "protractor-tools": "file:../build",
-    "ts-node": "~8.0.3",
+    "ts-node": "~8.10.1",
     "tslint": "~5.14.0",
     "typescript": "~3.2.2"
   }
