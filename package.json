@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Nolanus/protractor-tools#readme",
   "peerDependencies": {
-    "protractor": "~5.4.2",
+    "protractor": "~7.0.0",
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
