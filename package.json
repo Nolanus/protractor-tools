@@ -24,7 +24,7 @@
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
-    "@types/fs-extra": "^5.0.5",
+    "@types/fs-extra": "^9.0.1",
     "@types/jasmine": "~3.3.12",
     "@types/request": "^2.48.1",
     "@types/rx-node": "0.0.5",
